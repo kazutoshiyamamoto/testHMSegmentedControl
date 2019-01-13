@@ -18,25 +18,25 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     var statusbarHeight: CGFloat = UIApplication.shared.statusBarFrame.height
     
-    var isTabSelected = false
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // headerViewに合わせてsegmentedControlsのサイズを指定
         self.segmentedControls = HMSegmentedControl(frame: CGRect(x: 0, y: statusbarHeight, width: self.view.frame.size.width, height:self.headerView.frame.size.height))
-        self.segmentedControls.selectionIndicatorColor = UIColor(red: 30/255, green: 144/255, blue: 255/255, alpha: 1.0)
-        self.segmentedControls.selectionIndicatorHeight = 2.0
+        // メニューのタイトル
+        self.segmentedControls.sectionTitles = ["Menu1", "Menu2", "Menu3"]
+        // インジケータのスタイルを指定
         self.segmentedControls.selectionIndicatorLocation =  HMSegmentedControlSelectionIndicatorLocation.down
         self.segmentedControls.selectionStyle = HMSegmentedControlSelectionStyle.fullWidthStripe
-        self.segmentedControls.sectionTitles = ["Menu1", "Menu2", "Menu3"]
-        
+        // インジケータの色を指定
+        self.segmentedControls.selectionIndicatorColor = UIColor(red: 30/255, green: 144/255, blue: 255/255, alpha: 1.0)
+        // インジケータの高さ（太さ）を指定
+        self.segmentedControls.selectionIndicatorHeight = 2.0
         // segmentedControlsで選択中の文字の色
         self.segmentedControls.selectedTitleTextAttributes = [
             NSAttributedString.Key.foregroundColor: UIColor(red: 30/255, green: 144/255, blue: 255/255, alpha: 1.0),
             NSAttributedString.Key.font: UIFont(name: "HiraginoSans-W6", size: 16)!
         ]
-        
         // segmentedControlsで非選択中の文字の色
         self.segmentedControls.titleTextAttributes = [
             NSAttributedString.Key.foregroundColor: UIColor.lightGray,
@@ -46,7 +46,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         self.view.addSubview(segmentedControls)
         
         let blockVariable: IndexChangeBlock =  {(index: Int) -> Void in
-            self.isTabSelected = true
             let frame = CGRect(x: self.scrollView.frame.size.width * CGFloat(index), y: 0, width: self.scrollView.frame.size.width, height: self.scrollView.frame.size.height)
             self.scrollView.scrollRectToVisible(frame, animated: true)
         }

@@ -16,12 +16,10 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     var segmentedControls: HMSegmentedControl!
     
-    var statusbarHeight: CGFloat = UIApplication.shared.statusBarFrame.height
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // headerViewに合わせてsegmentedControlsのサイズを指定
+        let statusbarHeight: CGFloat = UIApplication.shared.statusBarFrame.height
         self.segmentedControls = HMSegmentedControl(frame: CGRect(x: 0, y: statusbarHeight, width: self.view.frame.size.width, height:self.headerView.frame.size.height))
         // メニューのタイトル
         self.segmentedControls.sectionTitles = ["Menu1", "Menu2", "Menu3"]

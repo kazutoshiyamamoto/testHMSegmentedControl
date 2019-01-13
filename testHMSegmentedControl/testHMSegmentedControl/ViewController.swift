@@ -10,10 +10,12 @@ import UIKit
 import HMSegmentedControl
 
 class ViewController: UIViewController, UIScrollViewDelegate {
-    
+    // メニューを表示するView
     @IBOutlet weak var headerView: UIView!
+    // メニューごとのViewを表示するScrollView
     @IBOutlet weak var scrollView: UIScrollView!
     
+    // HMSegmentedControlをインスタンス化
     var segmentedControls: HMSegmentedControl!
     
     override func viewDidLoad() {
@@ -47,14 +49,17 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             let frame = CGRect(x: self.scrollView.frame.size.width * CGFloat(index), y: 0, width: self.scrollView.frame.size.width, height: self.scrollView.frame.size.height)
             self.scrollView.scrollRectToVisible(frame, animated: true)
         }
-        
         segmentedControls.indexChangeBlock = blockVariable
         
-        scrollView.isPagingEnabled = true
-        scrollView.showsHorizontalScrollIndicator = false
-        scrollView.contentSize = CGSize(width: self.view.frame.size.width * 3, height: self.scrollView.frame.size.height)
         scrollView.delegate = self
-        
+        // メニュー単位のスクロールを可能にする
+        scrollView.isPagingEnabled = true
+        // 水平方向のスクロールインジケータを非表示にする
+        scrollView.showsHorizontalScrollIndicator = false
+        // scrollViewのサイズを指定（幅は1メニューに表示するViewの幅×メニュー数）
+        scrollView.contentSize = CGSize(width: self.view.frame.size.width * 3, height: self.scrollView.frame.size.height)
+
+        // 各メニューに表示するViewを生成
         let menu1 = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.scrollView.frame.size.height))
         menu1.backgroundColor = UIColor.cyan
         self.scrollView.addSubview(menu1)
@@ -68,6 +73,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         self.scrollView.addSubview(menu3)
     }
     
+    // ScrollViewの横スクロールに合わせてメニューのインジケータを移動する
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         segmentedControls.selectedSegmentIndex = Int(scrollView.contentOffset.x / scrollView.frame.maxX)
     }

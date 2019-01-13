@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		594A2F986798E3B2E33BF792 /* Pods_testHMSegmentedControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF70408DAB1560C3C39748A /* Pods_testHMSegmentedControl.framework */; };
+		FD8081E821EB5DF8005FD7B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8081E721EB5DF8005FD7B3 /* AppDelegate.swift */; };
+		FD8081EA21EB5DF8005FD7B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8081E921EB5DF8005FD7B3 /* ViewController.swift */; };
+		FD8081ED21EB5DF8005FD7B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD8081EB21EB5DF8005FD7B3 /* Main.storyboard */; };
+		FD8081EF21EB5DFB005FD7B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD8081EE21EB5DFB005FD7B3 /* Assets.xcassets */; };
+		FD8081F221EB5DFB005FD7B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD8081F021EB5DFB005FD7B3 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7FF70408DAB1560C3C39748A /* Pods_testHMSegmentedControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testHMSegmentedControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9302A7C2E7575C3E5F70CB9A /* Pods-testHMSegmentedControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testHMSegmentedControl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testHMSegmentedControl/Pods-testHMSegmentedControl.debug.xcconfig"; sourceTree = "<group>"; };
+		BC12B2AA0F52229DD1017C30 /* Pods-testHMSegmentedControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testHMSegmentedControl.release.xcconfig"; path = "Pods/Target Support Files/Pods-testHMSegmentedControl/Pods-testHMSegmentedControl.release.xcconfig"; sourceTree = "<group>"; };
+		FD8081E421EB5DF8005FD7B3 /* testHMSegmentedControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testHMSegmentedControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD8081E721EB5DF8005FD7B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD8081E921EB5DF8005FD7B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD8081EC21EB5DF8005FD7B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD8081EE21EB5DFB005FD7B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD8081F121EB5DFB005FD7B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD8081F321EB5DFB005FD7B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD8081E121EB5DF8005FD7B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				594A2F986798E3B2E33BF792 /* Pods_testHMSegmentedControl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E107DEF8A682A6FF7A160E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9302A7C2E7575C3E5F70CB9A /* Pods-testHMSegmentedControl.debug.xcconfig */,
+				BC12B2AA0F52229DD1017C30 /* Pods-testHMSegmentedControl.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC134321D13C599C1177F2C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FF70408DAB1560C3C39748A /* Pods_testHMSegmentedControl.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD8081DB21EB5DF8005FD7B3 = {
+			isa = PBXGroup;
+			children = (
+				FD8081E621EB5DF8005FD7B3 /* testHMSegmentedControl */,
+				FD8081E521EB5DF8005FD7B3 /* Products */,
+				8E107DEF8A682A6FF7A160E3 /* Pods */,
+				EC134321D13C599C1177F2C1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FD8081E521EB5DF8005FD7B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD8081E421EB5DF8005FD7B3 /* testHMSegmentedControl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD8081E621EB5DF8005FD7B3 /* testHMSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				FD8081E721EB5DF8005FD7B3 /* AppDelegate.swift */,
+				FD8081E921EB5DF8005FD7B3 /* ViewController.swift */,
+				FD8081EB21EB5DF8005FD7B3 /* Main.storyboard */,
+				FD8081EE21EB5DFB005FD7B3 /* Assets.xcassets */,
+				FD8081F021EB5DFB005FD7B3 /* LaunchScreen.storyboard */,
+				FD8081F321EB5DFB005FD7B3 /* Info.plist */,
+			);
+			path = testHMSegmentedControl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD8081E321EB5DF8005FD7B3 /* testHMSegmentedControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD8081F621EB5DFB005FD7B3 /* Build configuration list for PBXNativeTarget "testHMSegmentedControl" */;
+			buildPhases = (
+				4327A4F8E8B3FE5DB31C0F15 /* [CP] Check Pods Manifest.lock */,
+				FD8081E021EB5DF8005FD7B3 /* Sources */,
+				FD8081E121EB5DF8005FD7B3 /* Frameworks */,
+				FD8081E221EB5DF8005FD7B3 /* Resources */,
+				E133A0ED08056683DD39CE2F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testHMSegmentedControl;
+			productName = testHMSegmentedControl;
+			productReference = FD8081E421EB5DF8005FD7B3 /* testHMSegmentedControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD8081DC21EB5DF8005FD7B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Swift-beginners";
+				TargetAttributes = {
+					FD8081E321EB5DF8005FD7B3 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = FD8081DF21EB5DF8005FD7B3 /* Build configuration list for PBXProject "testHMSegmentedControl" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD8081DB21EB5DF8005FD7B3;
+			productRefGroup = FD8081E521EB5DF8005FD7B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD8081E321EB5DF8005FD7B3 /* testHMSegmentedControl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD8081E221EB5DF8005FD7B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD8081F221EB5DFB005FD7B3 /* LaunchScreen.storyboard in Resources */,
+				FD8081EF21EB5DFB005FD7B3 /* Assets.xcassets in Resources */,
+				FD8081ED21EB5DF8005FD7B3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4327A4F8E8B3FE5DB31C0F15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testHMSegmentedControl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E133A0ED08056683DD39CE2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-testHMSegmentedControl/Pods-testHMSegmentedControl-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/HMSegmentedControl/HMSegmentedControl.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HMSegmentedControl.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testHMSegmentedControl/Pods-testHMSegmentedControl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD8081E021EB5DF8005FD7B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD8081EA21EB5DF8005FD7B3 /* ViewController.swift in Sources */,
+				FD8081E821EB5DF8005FD7B3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FD8081EB21EB5DF8005FD7B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD8081EC21EB5DF8005FD7B3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD8081F021EB5DFB005FD7B3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD8081F121EB5DFB005FD7B3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD8081F421EB5DFB005FD7B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD8081F521EB5DFB005FD7B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD8081F721EB5DFB005FD7B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9302A7C2E7575C3E5F70CB9A /* Pods-testHMSegmentedControl.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DJ3WL36QU;
+				INFOPLIST_FILE = testHMSegmentedControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Swift-beginners2.testHMSegmentedControl";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD8081F821EB5DFB005FD7B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC12B2AA0F52229DD1017C30 /* Pods-testHMSegmentedControl.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DJ3WL36QU;
+				INFOPLIST_FILE = testHMSegmentedControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Swift-beginners2.testHMSegmentedControl";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD8081DF21EB5DF8005FD7B3 /* Build configuration list for PBXProject "testHMSegmentedControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD8081F421EB5DFB005FD7B3 /* Debug */,
+				FD8081F521EB5DFB005FD7B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD8081F621EB5DFB005FD7B3 /* Build configuration list for PBXNativeTarget "testHMSegmentedControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD8081F721EB5DFB005FD7B3 /* Debug */,
+				FD8081F821EB5DFB005FD7B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD8081DC21EB5DF8005FD7B3 /* Project object */;
+}

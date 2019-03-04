@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     // メニューごとのViewを表示するScrollView
     @IBOutlet weak var scrollView: UIScrollView!
     
-    // HMSegmentedControlをインスタンス化
     private lazy var segmentedControls: HMSegmentedControl = {
         // headerViewに合わせてsegmentedControlsのサイズを指定
         let statusbarHeight: CGFloat = UIApplication.shared.statusBarFrame.height
@@ -53,8 +52,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.addSubview(segmentedControls)
-        
         scrollView.delegate = self
         // メニュー単位のスクロールを可能にする
         scrollView.isPagingEnabled = true
@@ -63,13 +60,15 @@ class ViewController: UIViewController {
         // scrollViewのサイズを指定（幅は1メニューに表示するViewの幅×メニュー数）
         scrollView.contentSize = CGSize(width: self.view.frame.size.width * 3, height: self.scrollView.frame.size.height)
         
-        // 各メニューに表示するViewを生成
+        // segmentedControlsを追加
+        self.view.addSubview(self.segmentedControls)
+        
+        // 各メニューに表示するViewを追加
         let menu1: UIView = {
             let menu1 = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.scrollView.frame.size.height))
             menu1.backgroundColor = UIColor.cyan
             return menu1
         }()
-        
         self.scrollView.addSubview(menu1)
         
         let menu2: UIView = {
@@ -77,7 +76,6 @@ class ViewController: UIViewController {
             menu2.backgroundColor = UIColor.red
             return menu2
         }()
-        
         self.scrollView.addSubview(menu2)
         
         let menu3: UIView = {
@@ -85,7 +83,6 @@ class ViewController: UIViewController {
             menu3.backgroundColor = UIColor.green
             return menu3
         }()
-        
         self.scrollView.addSubview(menu3)
     }
 }
